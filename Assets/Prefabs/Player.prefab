@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: -6294744916648325933}
   - component: {fileID: 7303053131723335339}
   - component: {fileID: -7054064540328893562}
-  m_Layer: 0
+  - component: {fileID: 6204899683734955664}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8587340271344757162, guid: ca2cd208b765e1840a07af771b9bd024, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -215,3 +216,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+--- !u!114 &6204899683734955664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395810997295659896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c020e4c6b5636534cb566a1ea9536c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5444827282033512842, guid: 6300454a2324dda4180adbb60f234261, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 3
+  firingRate: 1
+  isFiring: 0

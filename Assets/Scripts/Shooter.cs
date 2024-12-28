@@ -1,7 +1,5 @@
 using System.Collections;
-using Mono.Cecil;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Shooter : MonoBehaviour
 {
@@ -20,7 +18,7 @@ public class Shooter : MonoBehaviour
     
     private Coroutine _firingCoroutine;
     
-    void Start()
+    private void Start()
     {
         if (useAI)
         {
@@ -28,12 +26,12 @@ public class Shooter : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         Fire();
     }
 
-    void Fire()
+    private void Fire()
     {
         if (isFiring && _firingCoroutine == null)
         {

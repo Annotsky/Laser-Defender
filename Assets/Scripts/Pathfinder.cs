@@ -8,7 +8,7 @@ public class Pathfinder : MonoBehaviour
     private List<Transform> _waypoints;
     private int _waypointIndex = 0;
     
-    void Awake()    
+    private void Awake()    
     {
         _enemySpawner = FindObjectOfType<EnemySpawner>();
     }

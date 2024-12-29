@@ -181,7 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  isPlayer: 0
+  scorePerEnemy: 100
   hitEffect: {fileID: 2496486407906708811, guid: 7beec78a5b73dc14ba14e2cbe2b2f449, type: 3}
+  applyCameraShake: 0
 --- !u!114 &1709719425436445002
 MonoBehaviour:
   m_ObjectHideFlags: 0

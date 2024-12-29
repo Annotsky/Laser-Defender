@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Shooter : MonoBehaviour
 {
@@ -18,6 +20,13 @@ public class Shooter : MonoBehaviour
     
     private Coroutine _firingCoroutine;
     
+    private AudioPlayer _audioPlayer;
+
+    private void Awake()
+    {
+        _audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
+
     private void Start()
     {
         if (useAI)
@@ -59,6 +68,8 @@ public class Shooter : MonoBehaviour
             float timeToNextProjectile = Random.Range(baseFiringRate - firingRateVariance,
                                                       baseFiringRate + firingRateVariance);
             timeToNextProjectile = Mathf.Clamp(timeToNextProjectile, minimumFiringRate, float.MaxValue);
+            
+            _audioPlayer.PlayShootingClip();
             
             Destroy(instance, projectileLifetime);
             yield return new WaitForSeconds(timeToNextProjectile);

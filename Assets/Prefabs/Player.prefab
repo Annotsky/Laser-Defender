@@ -135,11 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4696412000b2c3b4ab8fc737adf165a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   paddingLeft: 0.5
   paddingRight: 0.5
-  paddingTop: 1
-  paddingBottom: 1
+  paddingTop: 0.4
+  paddingBottom: 0.2
 --- !u!50 &-6294744916648325933
 Rigidbody2D:
   serializedVersion: 5

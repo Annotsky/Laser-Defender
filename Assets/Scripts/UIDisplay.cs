@@ -12,6 +12,7 @@ public class UIDisplay : MonoBehaviour
     
     [Header("Score")]
     [SerializeField] private TextMeshProUGUI scoreText;
+
     private ScoreKeeper _scoreKeeper;
 
     private void Awake()
